@@ -183,11 +183,87 @@ $X=A^{-1}B$
 
 求|A|, R(A), 一个最高阶非零子式
 
-<details open>
+<details>
     <summary>解</summary>
+
+矩阵的初等变换可以用矩阵乘法来表示
 
 $\left[\begin{matrix}1&0&0\\1&2&0\\1&2&-1\end{matrix}\right]*\left[\begin{matrix}3&2&-1\\2&-1&3\\7&0&5\end{matrix}\right]=\left[\begin{matrix}3&2&-1\\7&0&5\\0&0&0\end{matrix}\right]$
 
 $\left[\begin{matrix}3&2&-1\\7&0&5\\0&0&0\end{matrix}\right]*\left[\begin{matrix}0&1&0\\1&0&0\\0&0&1\end{matrix}\right]=\left[\begin{matrix}2&3&-1\\0&7&5\\0&0&0\end{matrix}\right]$
+
+矩阵A通过初等变换化为$\left[\begin{matrix}2&3&-1\\0&7&5\\0&0&0\end{matrix}\right]$
+
+非零子式的最高阶为2，所以R(A)=2
+
+</details>
+
+12. 已知A为n阶方阵，$|A|=n^n$，求$R(A)$, $|A^{-1}|$, $|nA^{-1}|$
+
+<details>
+    <summary>解</summary>
+
+$|A|=n^n\neq0$, $R(A)=n$
+
+$|A^{-1}|*|A|=1$, $|A|=n^n$, $|A^{-1}|=\frac{1}{n^n}$
+
+A是n阶方阵，$|nA^{-1}|=n^n|A^{-1}|=n^n * \frac{1}{n^n}=1$
+
+</details>
+
+13. 已知A为3阶矩阵，$|A|=\frac{1}{2}$, 求$R(A)$, $|A^{-1}|$, $|A^*|$
+
+<details>
+    <summary>解</summary>
+
+$|A|=\frac{1}{2}\neq0$, $R(A)=n$
+
+$|A^{-1}|*|A|=1$, $|A|=\frac{1}{2}$, $|A^{-1}|=2$
+
+A是n阶方阵，$A^{-1}=\frac{1}{|A|}A^*$
+
+$|A^{-1}|=|\frac{1}{|A|}A^*|$
+
+$|A^{-1}|=\frac{1}{|A|}=\frac{1}{|A|^n}|A^*|$
+
+$|A^*|=|A|^{n-1}$
+
+</details>
+
+14. n元线性方程组$Ax=b$的解判定
+
+<details>
+    <summary>解</summary>
+
+无解的充要条件：$R(A)<R(A,b)$
+
+唯一解充要条件：$R(A)=R(A,b)=n$
+
+无限解充要条件：$R(A)=R(A,b)<n$
+
+n元齐次线性方程组$Ax=0$有非零解充要条件：$R(A)<n$
+
+线性方程组$Ax=b$有解充要条件：$R(A)=R(A,b)$
+
+矩阵方程$AX=B$有解充要条件：$R(A)=R(A,B)$
+
+</details>
+
+15. 
+
+$
+\begin{cases}
+ 3x_1 + kx_2 + x_3 = 0\\
+ 4x_2 + x_3 = 0\\
+ kx_1 + 4x_2 = 0
+\end{cases}
+$
+
+求系数行列式D，若方程组有非零解，求k
+
+<details>
+    <summary>解</summary>
+
+当系数行列式D=0，方程组有非零解
 
 </details>
