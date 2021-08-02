@@ -267,3 +267,107 @@ $
 当系数行列式D=0，方程组有非零解
 
 </details>
+
+16. 
+
+$
+\begin{cases}
+ (1-a)x_1 + x_2 = 1\\
+ x_1 + (1-a)x_2 + x_3 = 2\\
+ 3x_2 + (1-a)x_3= 3
+\end{cases}
+$
+
+若方程组有唯一解，求a
+
+<details>
+    <summary>解</summary>
+
+系数行列式$D\neq0$
+
+$D=(1-a)(3-a)(1+a)\neq0$
+
+</details>
+
+17. 
+
+$
+\begin{cases}
+ ax_1 + x_2 + x_3 = 1\\
+ x_1 + ax_2 + x_3 = a\\
+ x_1 + x_2 + ax_3= a^2
+\end{cases}
+$
+
+求增广矩阵
+
+增广矩阵的阶梯型
+
+方程组无解，求a
+
+方程组有无限解，求a和通解
+
+<details open>
+    <summary>解</summary>
+
+增广矩阵
+
+$\left[\begin{matrix}a&1&1&1\\1&a&1&a\\1&1&a&a^2\end{matrix}\right]$
+
+增广矩阵的阶梯型
+
+$\left[\begin{matrix}
+1&0&1+a&a(1+a)\\
+0&1&-1&-a\\
+0&0&(1+a)(2+a)&(1-a)(1+a)^2
+\end{matrix}\right]$
+
+无解
+
+$
+\begin{cases}
+ (1+a)(2+a) = 0\\
+ (1-a)(1+a)^2 \neq 0
+\end{cases}
+$
+
+唯一解
+
+$(1+a)(2+a) \neq 0$
+
+无限解
+
+$
+\begin{cases}
+ (1+a)(2+a) = 0\\
+ (1-a)(1+a)^2 = 0
+\end{cases}
+$
+
+通解$x = \left[\begin{matrix}x1\\x2\\x3\end{matrix}\right] = x_p + x_n$
+
+当$a = -1$
+
+增广矩阵为
+
+$\left[\begin{matrix}
+1&0&0&0\\
+0&1&-1&1\\
+0&0&0&0
+\end{matrix}\right]$
+
+增广矩阵每行第一个系数不为0的变量，叫做独立变量，$x_1$, $x_2$
+
+其余的变量为自由变量：$x_3$
+
+$x_p$是$Ax=0$在自由变量$x_3=0$的特解，
+
+$x_p=\left[\begin{matrix}0\\1\\0\end{matrix}\right]$
+
+$x_n$是$Ax=b$的基础解，设自由变量$x_3=1$求基础基
+
+$x_n=c\left[\begin{matrix}0\\1\\1\end{matrix}\right]$
+
+通解$x = x_p + x_n = \left[\begin{matrix}0\\1\\0\end{matrix}\right] + c\left[\begin{matrix}0\\1\\1\end{matrix}\right]$, $c\in{R}$
+
+</details>
