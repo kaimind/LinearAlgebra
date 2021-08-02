@@ -307,7 +307,7 @@ $
 
 方程组有无限解，求a和通解
 
-<details open>
+<details>
     <summary>解</summary>
 
 增广矩阵
@@ -360,14 +360,81 @@ $\left[\begin{matrix}
 
 其余的变量为自由变量：$x_3$
 
-$x_p$是$Ax=0$在自由变量$x_3=0$的特解，
+$x_p$是$Ax=b$在自由变量$x_3=0$的特解，
 
 $x_p=\left[\begin{matrix}0\\1\\0\end{matrix}\right]$
 
-$x_n$是$Ax=b$的基础解，设自由变量$x_3=1$求基础基
+$x_n$是$Ax=0$的基础解，设自由变量$x_3=1$求基础基
 
 $x_n=c\left[\begin{matrix}0\\1\\1\end{matrix}\right]$
 
 通解$x = x_p + x_n = \left[\begin{matrix}0\\1\\0\end{matrix}\right] + c\left[\begin{matrix}0\\1\\1\end{matrix}\right]$, $c\in{R}$
+
+</details>
+
+18. 
+
+$
+\begin{cases}
+ x_1 + 2x_2 - x_3 + 3x_4 = 2\\
+ 2x_1 + 4x_2 - 2x_3 + 5x_4 = 1\\
+ -x_1 - 2x_2 + x_3 - x_4 = 4
+\end{cases}
+$
+
+求增广矩阵的秩
+
+齐次线性方程组的特解
+
+非齐次线性方程组的通解
+
+<details>
+    <summary>解</summary>
+
+增广矩阵
+
+$\left[\begin{matrix}
+1&2&-1&3&2\\
+2&4&-2&5&1\\
+-1&-2&1&-1&4
+\end{matrix}\right]$
+
+经过初等变换为阶梯矩阵
+
+$\left[\begin{matrix}
+1&2&-1&3&2\\
+0&0&0&1&3\\
+0&0&0&0&0
+\end{matrix}\right]$
+
+非零子阵的最高阶为2，增广矩阵的秩为2
+
+阶梯矩阵的每行第一个系数不为0的变量为独立变量$x_1$, $x_4$
+
+其余的变量为自由变量$x_2$, $x_3$
+
+设自由变量$x_2$, $x_3$为0，求出$Ax=b$的特解
+
+$x_p=\left[\begin{matrix}-7\\0\\0\\3\end{matrix}\right]$
+
+自由变量$x_2$, $x_3$分别设为1，代入齐次线性方程组$Ax=0$
+
+$
+\begin{cases}
+ \left[\begin{matrix}1&2&-1&3\\0&0&0&1\\0&0&0&0\end{matrix}\right] * \left[\begin{matrix}x_1\\1\\0\\x_4\end{matrix}\right]= \left[\begin{matrix}0\\0\\0\\0\end{matrix}\right]\\
+ \\
+ \left[\begin{matrix}1&2&-1&3\\0&0&0&1\\0&0&0&0\end{matrix}\right] * \left[\begin{matrix}x_1\\0\\1\\x_4\end{matrix}\right]= \left[\begin{matrix}0\\0\\0\\0\end{matrix}\right]
+\end{cases}
+$
+
+解出两个基础解
+
+$\left[\begin{matrix}-2\\1\\0\\0\end{matrix}\right]$, $\left[\begin{matrix}1\\0\\1\\0\end{matrix}\right]$
+
+基础解为
+
+$a_1\left[\begin{matrix}-2\\1\\0\\0\end{matrix}\right] + a_2\left[\begin{matrix}1\\0\\1\\0\end{matrix}\right]$
+
+$a_1, a_2 \in R$
 
 </details>
