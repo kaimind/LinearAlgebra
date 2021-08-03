@@ -438,3 +438,63 @@ $a_1\left[\begin{matrix}-2\\1\\0\\0\end{matrix}\right] + a_2\left[\begin{matrix}
 $a_1, a_2 \in R$
 
 </details>
+
+19. 已知向量组A：$a_1=\left[\begin{matrix}1\\-3\end{matrix}\right]$, $a_2=\left[\begin{matrix}2\\\alpha\end{matrix}\right]$; 向量$b=\left[\begin{matrix}\beta\\3\end{matrix}\right]$
+
+当b不能由A线性表示，求$\alpha$, $\beta$
+
+当b可由A唯一线性表示，求$\alpha$
+
+<details>
+    <summary>解</summary>
+
+b由A线性表示：
+
+$b=x_1\left[\begin{matrix}1\\-3\end{matrix}\right] + x_2\left[\begin{matrix}2\\\alpha\end{matrix}\right]=\left[\begin{matrix}\beta\\3\end{matrix}\right]$
+
+可以写成线性方程组：
+
+$\left[\begin{matrix}1&2\\-3&\alpha\end{matrix}\right]\left[\begin{matrix}x_1\\x_2\end{matrix}\right]=\left[\begin{matrix}\beta\\3\end{matrix}\right]$
+
+此方程组无解，则b不能由A线性表示
+
+写成增广矩阵
+
+$\left[\begin{matrix}1&2&\beta\\-3&\alpha&3\end{matrix}\right]$
+
+通过初等变换，化为阶梯型
+
+$\left[\begin{matrix}1&2&\beta\\0&6+\alpha&3\beta+3\end{matrix}\right]$
+
+无解的条件为：
+
+$
+\begin{cases}
+ 6 + \alpha = 0\\
+ 3\beta+3 \neq 0
+\end{cases}
+$
+
+有唯一解的条件为：
+
+$
+\begin{cases}
+ 6 + \alpha \neq 0\\
+ 3\beta+3 \neq 0
+\end{cases}
+$
+
+</details>
+
+20. 已知向量组
+
+$A=(a_1,a_2,a_3)=\left[\begin{matrix}k&-1&1\\1&k&-1\\1&-1&k\end{matrix}\right]$
+
+线性无关，求k
+
+<details>
+    <summary>解</summary>
+
+
+
+</details>
